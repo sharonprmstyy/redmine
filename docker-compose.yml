@@ -9,9 +9,9 @@ services:
       - 8080:3000
     env_file:
       - var.env
-  kanboard:
-    image: kanboard/kanboard:latest
+ 
+ adminer:
+    image: adminer
+    restart: always
     ports:
-      - "80:80"
-    env_file:
-      - var.env
+      - 80:80
